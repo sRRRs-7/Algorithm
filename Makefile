@@ -1,2 +1,2 @@
 bench:
-	cargo bench
+	cargo bench > bench.txt

@@ -16,10 +16,10 @@ pub fn main() {
 }
 
 
-pub fn roman_to_int(s: String) -> i32 {
-    let mut s_arr: Vec<&str> = s.trim().split("").collect();
+pub fn roman_to_int(s: String) -> i16 {
+    let mut s_arr: Vec<&str> = s.split("").collect();
         s_arr.retain(|&x| x != "");
-    let mut arr = Vec::new();
+    let mut arr: Vec<i16> = Vec::new();
 
     for x in s_arr {
         match x {
@@ -30,7 +30,7 @@ pub fn roman_to_int(s: String) -> i32 {
             "C" => arr.push(100),
             "D" => arr.push(500),
             "M" => arr.push(1000),
-            _ => panic!("panic"),
+            _ => panic!("invalid value"),
         };
     }
 
@@ -42,12 +42,9 @@ pub fn roman_to_int(s: String) -> i32 {
     };
     arr.retain(|&x| x != 0);
 
-    let mut sum = 0;
-    for x in arr {
-        sum += x
-    }
+    let sum: i16 = arr.iter().sum();
 
-    sum as i32
+    sum as i16
 
 }
 
