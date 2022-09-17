@@ -27,11 +27,18 @@ fn bm4(c: &mut Criterion) {
             || algorithm::lcm_gcd::lcm(32, 64)));
 }
 
+fn bm5(c: &mut Criterion) {
+    c.bench_function(
+        "n_root", |b| b.iter(
+            || algorithm::n_root::n_root(65536.0)));
+}
+
 
 criterion_group!(benches,
     bm1,
     bm2,
     bm3,
     bm4,
+    bm5,
 );
 criterion_main!(benches);
