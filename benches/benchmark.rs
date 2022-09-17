@@ -33,6 +33,18 @@ fn bm5(c: &mut Criterion) {
             || algorithm::n_root::n_root(65536.0)));
 }
 
+fn bm6(c: &mut Criterion) {
+    c.bench_function(
+        "reverse_integer", |b| b.iter(
+            || algorithm::reverse_int::reverse_integer(-186483673)));
+}
+
+fn bm7(c: &mut Criterion) {
+    c.bench_function(
+        "reverse_integer", |b| b.iter(
+            || algorithm::reverse_int::reverse(-186483673)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -40,5 +52,7 @@ criterion_group!(benches,
     bm3,
     bm4,
     bm5,
+    bm6,
+    bm7,
 );
 criterion_main!(benches);
