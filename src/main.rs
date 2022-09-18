@@ -6,4 +6,5 @@ fn main() {
     algorithm::reverse_int::main();
     algorithm::lcm_gcd::main();
     algorithm::n_root::main();
+    algorithm::wildcard_match::main();
 }

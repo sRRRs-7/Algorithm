@@ -45,6 +45,18 @@ fn bm7(c: &mut Criterion) {
             || algorithm::reverse_int::reverse(-186483673)));
 }
 
+fn bm8(c: &mut Criterion) {
+    c.bench_function(
+        "wildcard_match", |b| b.iter(
+            || algorithm::wildcard_match::wildcard_matching("hsfduaifh", "*")));
+}
+
+fn bm9(c: &mut Criterion) {
+    c.bench_function(
+        "is_match", |b| b.iter(
+            || algorithm::wildcard_match::is_match("hsfduaifh", "*")));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -54,5 +66,7 @@ criterion_group!(benches,
     bm5,
     bm6,
     bm7,
+    bm8,
+    bm9,
 );
 criterion_main!(benches);
