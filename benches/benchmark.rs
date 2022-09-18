@@ -57,6 +57,18 @@ fn bm9(c: &mut Criterion) {
             || algorithm::wildcard_match::is_match("hsfduaifh", "*")));
 }
 
+fn bm10(c: &mut Criterion) {
+    c.bench_function(
+        "median_array", |b| b.iter(
+            || algorithm::median_array::median(vec!(1, 2, 3, 4, 5), vec!(7, 9, 11, 13))));
+}
+
+fn bm11(c: &mut Criterion) {
+    c.bench_function(
+        "median", |b| b.iter(
+            || algorithm::median_array::find_median_sorted_arrays(vec!(1, 2, 3, 4, 5), vec!(7, 9, 11, 13))));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -68,5 +80,7 @@ criterion_group!(benches,
     bm7,
     bm8,
     bm9,
+    bm10,
+    bm11,
 );
 criterion_main!(benches);
