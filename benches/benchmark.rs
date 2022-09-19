@@ -69,6 +69,18 @@ fn bm11(c: &mut Criterion) {
             || algorithm::median_array::find_median_sorted_arrays(vec!(1, 2, 3, 4, 5), vec!(7, 9, 11, 13))));
 }
 
+fn bm12(c: &mut Criterion) {
+    c.bench_function(
+        "elevation_map", |b| b.iter(
+            || algorithm::elevation_map::elevation_map(vec!(0,1,0,2,1,0,1,3,2,1,2,1))));
+}
+
+fn bm13(c: &mut Criterion) {
+    c.bench_function(
+        "trap", |b| b.iter(
+            || algorithm::elevation_map::trap(vec!(0,1,0,2,1,0,1,3,2,1,2,1))));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -82,5 +94,7 @@ criterion_group!(benches,
     bm9,
     bm10,
     bm11,
+    bm12,
+    bm13,
 );
 criterion_main!(benches);

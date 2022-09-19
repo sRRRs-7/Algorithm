@@ -8,4 +8,5 @@ fn main() {
     algorithm::n_root::main();
     algorithm::wildcard_match::main();
     algorithm::median_array::main();
+    algorithm::elevation_map::main();
 }
