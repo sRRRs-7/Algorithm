@@ -6,3 +6,4 @@ pub mod n_root;
 pub mod wildcard_match;
 pub mod median_array;
 pub mod elevation_map;
+pub mod get_permutation;

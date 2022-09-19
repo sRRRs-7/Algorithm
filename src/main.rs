@@ -9,4 +9,5 @@ fn main() {
     algorithm::wildcard_match::main();
     algorithm::median_array::main();
     algorithm::elevation_map::main();
+    algorithm::get_permutation::main();
 }
