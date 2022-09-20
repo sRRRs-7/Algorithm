@@ -1,7 +1,7 @@
 
 pub fn main() {
-    let result = get_permutation(4, 4);
-    println!("{}", result);
+    let result = get_permutation(4, 10);
+    println!("result: {}", result);
 }
 
 pub fn get_permutation(n: i32, k: i32) -> String {
@@ -9,9 +9,7 @@ pub fn get_permutation(n: i32, k: i32) -> String {
     for _ in 0..k-1 {
         next_permutation(&mut payload);
     }
-    let result = payload.iter().map(|a| a.to_string()).collect::<String>();
-
-    result
+    payload.iter().map(|a| a.to_string()).collect::<String>()
 }
 
 fn next_permutation(arr: &mut Vec<i32>) {
@@ -33,10 +31,11 @@ fn next_permutation(arr: &mut Vec<i32>) {
                 low += 1;
                 high -= 1;
             }
+            // println!("{:?}", arr);
             return;
         }
     }
-    arr.sort()
+    arr.sort();
 }
 
 
