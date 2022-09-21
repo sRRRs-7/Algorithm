@@ -81,6 +81,24 @@ fn bm13(c: &mut Criterion) {
             || algorithm::elevation_map::trap(vec!(0,1,0,2,1,0,1,3,2,1,2,1))));
 }
 
+fn bm14(c: &mut Criterion) {
+    c.bench_function(
+        "bubble_sort", |b| b.iter(
+            || algorithm::bubble_sort::bubble_sort(&mut vec!(0,1,0,2,1,0,1,3,2,1,2,1))));
+}
+
+fn bm15(c: &mut Criterion) {
+    c.bench_function(
+        "rust_simple_sort", |b| b.iter(
+            || algorithm::bubble_sort::simple_sort(&mut vec!(0,1,0,2,1,0,1,3,2,1,2,1))));
+}
+
+fn bm16(c: &mut Criterion) {
+    c.bench_function(
+        "quick_sort", |b| b.iter(
+            || algorithm::quick_sort::quick_sort(&mut vec!(0,1,0,2,1,0,1,3,2,1,2,1))));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -96,5 +114,8 @@ criterion_group!(benches,
     bm11,
     bm12,
     bm13,
+    bm14,
+    bm15,
+    bm16,
 );
 criterion_main!(benches);

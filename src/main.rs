@@ -13,4 +13,5 @@ fn main() {
     algorithm::bubble_sort::main();
     algorithm::quick_sort::main();
     algorithm::merge_sort::main();
+    algorithm::radix_convert::main();
 }
