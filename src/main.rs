@@ -10,4 +10,7 @@ fn main() {
     algorithm::median_array::main();
     algorithm::elevation_map::main();
     algorithm::get_permutation::main();
+    algorithm::bubble_sort::main();
+    algorithm::quick_sort::main();
+    algorithm::merge_sort::main();
 }

@@ -7,3 +7,6 @@ pub mod wildcard_match;
 pub mod median_array;
 pub mod elevation_map;
 pub mod get_permutation;
+pub mod bubble_sort;
+pub mod quick_sort;
+pub mod merge_sort;
