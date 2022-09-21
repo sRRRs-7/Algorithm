@@ -99,6 +99,18 @@ fn bm16(c: &mut Criterion) {
             || algorithm::quick_sort::quick_sort(&mut vec!(0,1,0,2,1,0,1,3,2,1,2,1))));
 }
 
+// fn bm17(c: &mut Criterion) {
+//     c.bench_function(
+//         "merge_sort", |b| b.iter(
+//             || algorithm::quick_sort::quick_sort(&mut vec!(0,1,0,2,1,0,1,3,2,1,2,1))));
+// }
+
+fn bm18(c: &mut Criterion) {
+    c.bench_function(
+        "radix_convert", |b| b.iter(
+            || algorithm::radix_convert::radix_convert(&mut 120, &mut 11, &mut String::from(""))));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -117,5 +129,7 @@ criterion_group!(benches,
     bm14,
     bm15,
     bm16,
+    // bm17,
+    bm18,
 );
 criterion_main!(benches);
