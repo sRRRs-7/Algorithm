@@ -20,11 +20,11 @@ pub fn radix_convert(decimal: &mut i32, to: &mut  i32, value: &mut String) {
 
         match surplus {
             1..=9 =>  arr.push(format!("{}", surplus)),
-            10 =>  arr.push("A".to_string()),
-            11 =>  arr.push("B".to_string()),
-            12 =>  arr.push("C".to_string()),
-            13 =>  arr.push("D".to_string()),
-            14 =>  arr.push("E".to_string()),
+            10 => arr.push("A".to_string()),
+            11 => arr.push("B".to_string()),
+            12 => arr.push("C".to_string()),
+            13 => arr.push("D".to_string()),
+            14 => arr.push("E".to_string()),
             15 => arr.push("F".to_string()),
             _ => panic!("error")
         }

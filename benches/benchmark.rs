@@ -111,6 +111,12 @@ fn bm18(c: &mut Criterion) {
             || algorithm::radix_convert::radix_convert(&mut 120, &mut 11, &mut String::from(""))));
 }
 
+fn bm19(c: &mut Criterion) {
+    c.bench_function(
+        "fibonacci", |b| b.iter(
+            || algorithm::fibonacci::fibonacci(100)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -131,5 +137,6 @@ criterion_group!(benches,
     bm16,
     // bm17,
     bm18,
+    bm19,
 );
 criterion_main!(benches);
