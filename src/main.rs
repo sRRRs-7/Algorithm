@@ -15,4 +15,5 @@ fn main() {
     algorithm::merge_sort::main();
     algorithm::radix_convert::main();
     algorithm::fibonacci::main();
+    algorithm::binary_search::main();
 }

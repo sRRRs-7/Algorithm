@@ -1,6 +1,6 @@
 
 pub fn main() {
-    let n: f64 = 101.0;
+    let n: i128 = 100;
     let result = prime_judge(n);
 
     if result {
@@ -10,13 +10,14 @@ pub fn main() {
     }
 }
 
-pub fn prime_judge(n: f64) -> bool {
-    let sq = n.sqrt().round() as i32;
+pub fn prime_judge(n: i128) -> bool {
+    let mut i = 2;
 
-    for i in 2..sq {
-        if n as i32 % i == 0 {
+    while i * i <= n {
+        if n % i == 0 {
             return false;
         }
+        i = i + i;
     };
 
     return true
