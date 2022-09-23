@@ -12,7 +12,7 @@ fn bm1(c: &mut Criterion) {
 fn bm2(c: &mut Criterion) {
     c.bench_function(
         "prime judge", |b| b.iter(
-            || algorithm::prime_number::prime_judge(101 as f64)));
+            || algorithm::prime_number::prime_judge(101 as i128)));
 }
 
 fn bm3(c: &mut Criterion) {
