@@ -16,4 +16,7 @@ fn main() {
     algorithm::radix_convert::main();
     algorithm::fibonacci::main();
     algorithm::binary_search::main();
+    algorithm::two_sum_search::main();
+    algorithm::gaussian_calc::main();
+    algorithm::collatz_problem::main();
 }

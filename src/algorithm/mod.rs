@@ -13,3 +13,6 @@ pub mod merge_sort;
 pub mod radix_convert;
 pub mod fibonacci;
 pub mod binary_search;
+pub mod two_sum_search;
+pub mod gaussian_calc;
+pub mod collatz_problem;

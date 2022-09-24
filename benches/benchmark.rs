@@ -117,6 +117,24 @@ fn bm19(c: &mut Criterion) {
             || algorithm::fibonacci::fibonacci(100)));
 }
 
+fn bm20(c: &mut Criterion) {
+    c.bench_function(
+        "binary_search", |b| b.iter(
+            || algorithm::binary_search::binary_search(&mut vec!(4,6,8,45,6,7,3,2,3,6,7,8,56,434,564,1), 56)));
+}
+
+fn bm21(c: &mut Criterion) {
+    c.bench_function(
+        "gaussian_calc", |b| b.iter(
+            || algorithm::gaussian_calc::gaussian_calc(1000)));
+}
+
+fn bm22(c: &mut Criterion) {
+    c.bench_function(
+        "collatz_problem", |b| b.iter(
+            || algorithm::collatz_problem::collatz_problem(&mut 27)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -138,5 +156,8 @@ criterion_group!(benches,
     bm17,
     bm18,
     bm19,
+    bm20,
+    bm21,
+    bm22,
 );
 criterion_main!(benches);
