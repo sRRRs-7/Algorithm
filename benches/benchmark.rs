@@ -135,6 +135,12 @@ fn bm22(c: &mut Criterion) {
             || algorithm::collatz_problem::collatz_problem(&mut 27)));
 }
 
+fn bm23(c: &mut Criterion) {
+    c.bench_function(
+        "pascal_triangle", |b| b.iter(
+            || algorithm::pascal_triangle::pascal_triangle(10)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -159,5 +165,6 @@ criterion_group!(benches,
     bm20,
     bm21,
     bm22,
+    bm23,
 );
 criterion_main!(benches);

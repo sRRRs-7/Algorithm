@@ -19,4 +19,6 @@ fn main() {
     algorithm::two_sum_search::main();
     algorithm::gaussian_calc::main();
     algorithm::collatz_problem::main();
+    algorithm::pascal_triangle::main();
+    algorithm::poisson_dispersion::main();
 }
