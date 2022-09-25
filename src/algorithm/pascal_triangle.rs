@@ -10,13 +10,13 @@ pub fn pascal_triangle(d: i32) {
         let mut c = 1;
 
         for _ in 1..2 * (d-1-i) + 1 {
-            print!(" ")
+            // print!(" ")
         }
 
         for k in 0..i+1 {
-            print!("{:2} ", c);
+            // print!("{:2} ", c);
             c = c * (i-k) / (k+1);
         }
-        println!();
+        // println!();
     }
 }

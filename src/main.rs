@@ -21,4 +21,5 @@ fn main() {
     algorithm::collatz_problem::main();
     algorithm::pascal_triangle::main();
     algorithm::poisson_dispersion::main();
+    algorithm::coin_change::main();
 }

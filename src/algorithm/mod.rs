@@ -18,3 +18,4 @@ pub mod gaussian_calc;
 pub mod collatz_problem;
 pub mod pascal_triangle;
 pub mod poisson_dispersion;
+pub mod coin_change;

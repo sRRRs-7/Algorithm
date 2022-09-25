@@ -5,6 +5,7 @@ pub fn main() {
     println!("gaussian {}", result);
 }
 
+// 1001 * 500
 pub fn gaussian_calc(n: i32) -> i32 {
     let sum = (1 + n) * (n / 2);
     sum

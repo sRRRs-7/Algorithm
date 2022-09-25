@@ -141,6 +141,12 @@ fn bm23(c: &mut Criterion) {
             || algorithm::pascal_triangle::pascal_triangle(10)));
 }
 
+fn bm24(c: &mut Criterion) {
+    c.bench_function(
+        "coin_change", |b| b.iter(
+            || algorithm::coin_change::coin_change(&mut vec!(1,3,7), &mut 100)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -166,5 +172,6 @@ criterion_group!(benches,
     bm21,
     bm22,
     bm23,
+    bm24,
 );
 criterion_main!(benches);
