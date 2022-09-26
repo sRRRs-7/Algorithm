@@ -23,4 +23,5 @@ fn main() {
     algorithm::poisson_dispersion::main();
     algorithm::coin_change::main();
     algorithm::hanoi::main();
+    algorithm::recursive::main();
 }

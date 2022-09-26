@@ -20,3 +20,4 @@ pub mod pascal_triangle;
 pub mod poisson_dispersion;
 pub mod coin_change;
 pub mod hanoi;
+pub mod recursive;

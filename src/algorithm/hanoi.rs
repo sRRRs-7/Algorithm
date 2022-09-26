@@ -1,14 +1,16 @@
 
 // hanoi rules
-    // 3 towers (start, goal, work)
-    // disks (n)
-    // bigger disk is not on the small disk
+// 3 towers (start, goal, work)
+// disks (n)
+// bigger disk is not on the small disk
 
 pub fn main() {
     let (n, left, center, right) = (3, "L", "C", "R");
     let mut process = 0;
     hanoi(n, left, center, right, &mut process);
     println!("process: {} times", process);
+
+    hanoi_bench(n, left, center, right);
 }
 
 pub fn hanoi(n: i32, left: &str, center: &str, right: &str, p: &mut i32) {
@@ -26,3 +28,4 @@ pub fn hanoi_bench(n: i32, left: &str, center: &str, right: &str) {
         hanoi_bench(n - 1, right, center, left);
     }
 }
+
