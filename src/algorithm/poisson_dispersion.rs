@@ -4,18 +4,32 @@
 // n = frequency -> infinite
 // p = probability -> 1 / infinite
 // lambda = np
-
 // formula = (lambda^k) * (e^-lambda) / k!
 
+//poisson dispersion
+    // n = average frequency
+    // p = average probability
+    // k = future probability
 
-const e: f64 = 2.7182818284590452353602874713527;
+
+const E: f64 = 2.7182818284590452353602874713527;
 
 pub fn main() {
-    binominal_dispersion(10.0, 0.5, 1.0);
+    let res = binominal_dispersion(10.0, 0.5, 10.0);
+    println!("binominal: {} %", res);
+
+    // if tell average 2 time per half hour, will tell 6 time per a hour ?
+    let res2 = poisson_dispersion(2.0, 2.0, 6.0);
+    println!("poisson dispersion: {} %", res2);
+
 }
 
-pub fn poisson_dispersion() {
+pub fn poisson_dispersion(n: f64, p: f64, k: f64) -> f64 {
+    let lambda = n * p;
+    let fac = factorial(k);
+    let res = (lambda.powf(k) * E.powf(-lambda)) / fac;
 
+    res * 100.0
 }
 
 
@@ -39,8 +53,6 @@ fn factorial(n: f64) -> f64 {
     } else if res < 0.00000001 {
         res = 0.00001
     };
-
-    println!("{} %", res);
 
     res
  }

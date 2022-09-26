@@ -22,4 +22,5 @@ fn main() {
     algorithm::pascal_triangle::main();
     algorithm::poisson_dispersion::main();
     algorithm::coin_change::main();
+    algorithm::hanoi::main();
 }

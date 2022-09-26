@@ -147,6 +147,12 @@ fn bm24(c: &mut Criterion) {
             || algorithm::coin_change::coin_change(&mut vec!(1,3,7), &mut 100)));
 }
 
+fn bm25(c: &mut Criterion) {
+    c.bench_function(
+        "poisson_dispersion", |b| b.iter(
+            || algorithm::poisson_dispersion::poisson_dispersion(2.0, 2.0, 10.0)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -173,5 +179,6 @@ criterion_group!(benches,
     bm22,
     bm23,
     bm24,
+    bm25,
 );
 criterion_main!(benches);
