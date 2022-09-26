@@ -19,3 +19,10 @@ pub fn hanoi(n: i32, left: &str, center: &str, right: &str, p: &mut i32) {
         hanoi(n - 1, right, center, left, p);
     }
 }
+
+pub fn hanoi_bench(n: i32, left: &str, center: &str, right: &str) {
+    if n > 0 {
+        hanoi_bench(n - 1, left,right, center);
+        hanoi_bench(n - 1, right, center, left);
+    }
+}

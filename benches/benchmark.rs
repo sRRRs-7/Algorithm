@@ -153,6 +153,12 @@ fn bm25(c: &mut Criterion) {
             || algorithm::poisson_dispersion::poisson_dispersion(2.0, 2.0, 10.0)));
 }
 
+fn bm26(c: &mut Criterion) {
+    c.bench_function(
+        "hanoi", |b| b.iter(
+            || algorithm::hanoi::hanoi_bench(5, "", "", "")));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -180,5 +186,6 @@ criterion_group!(benches,
     bm23,
     bm24,
     bm25,
+    bm26,
 );
 criterion_main!(benches);
