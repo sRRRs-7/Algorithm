@@ -159,6 +159,12 @@ fn bm26(c: &mut Criterion) {
             || algorithm::hanoi::hanoi_bench(5, "", "", "")));
 }
 
+fn bm27(c: &mut Criterion) {
+    c.bench_function(
+        "newton_method", |b| b.iter(
+            || algorithm::newton_method::newton_method(3.0, 10.0)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -187,5 +193,6 @@ criterion_group!(benches,
     bm24,
     bm25,
     bm26,
+    bm27,
 );
 criterion_main!(benches);

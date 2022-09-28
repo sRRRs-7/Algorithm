@@ -24,4 +24,9 @@ fn main() {
     algorithm::coin_change::main();
     algorithm::hanoi::main();
     algorithm::recursive::main();
+    algorithm::dijkstra::main();
+    algorithm::qr_code::main();
+    algorithm::rsa_cipher::main();
+    algorithm::linked_list::main();
+    algorithm::newton_method::main();
 }

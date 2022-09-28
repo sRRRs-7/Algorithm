@@ -8,7 +8,7 @@ fn recursive_func(n: i32) {
         recursive_func(n - 1);
         recursive_func(n - 1);
 
-        print!("{}", n);
+        // println!("{}", n);
     }
 }
 

@@ -21,3 +21,8 @@ pub mod poisson_dispersion;
 pub mod coin_change;
 pub mod hanoi;
 pub mod recursive;
+pub mod dijkstra;
+pub mod qr_code;
+pub mod rsa_cipher;
+pub mod linked_list;
+pub mod newton_method;
