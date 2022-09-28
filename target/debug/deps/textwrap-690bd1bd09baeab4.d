@@ -1,0 +1,11 @@
+/Users/srrrs/App/Rust/lib/lib/algorithm/algo/target/debug/deps/textwrap-690bd1bd09baeab4.rmeta: /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/lib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/indentation.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/word_separators.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/word_splitters.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/wrap_algorithms.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/line_ending.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/core.rs
+
+/Users/srrrs/App/Rust/lib/lib/algorithm/algo/target/debug/deps/textwrap-690bd1bd09baeab4.d: /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/lib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/indentation.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/word_separators.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/word_splitters.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/wrap_algorithms.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/line_ending.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/core.rs
+
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/lib.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/indentation.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/word_separators.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/word_splitters.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/wrap_algorithms.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/line_ending.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.15.1/src/core.rs:

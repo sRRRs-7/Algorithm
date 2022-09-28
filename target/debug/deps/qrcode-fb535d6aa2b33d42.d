@@ -1,0 +1,15 @@
+/Users/srrrs/App/Rust/lib/lib/algorithm/algo/target/debug/deps/qrcode-fb535d6aa2b33d42.rmeta: /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/lib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/types.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/bits.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/optimize.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/ec.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/canvas.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/mod.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/image.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/string.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/svg.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/cast.rs
+
+/Users/srrrs/App/Rust/lib/lib/algorithm/algo/target/debug/deps/qrcode-fb535d6aa2b33d42.d: /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/lib.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/types.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/bits.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/optimize.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/ec.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/canvas.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/mod.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/image.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/string.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/svg.rs /Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/cast.rs
+
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/lib.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/types.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/bits.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/optimize.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/ec.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/canvas.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/mod.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/image.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/string.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/render/svg.rs:
+/Users/srrrs/.cargo/registry/src/github.com-1ecc6299db9ec823/qrcode-0.5.0/src/cast.rs:
