@@ -31,7 +31,6 @@ fn partition(arr: &mut Vec<i32>, s: isize, e: isize) -> isize {
             arr.swap(i as usize, j as usize);
         }
     }
-
     arr.swap((i + 1) as usize, e as usize);
 
     i + 1

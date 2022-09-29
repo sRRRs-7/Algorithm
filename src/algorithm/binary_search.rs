@@ -53,12 +53,6 @@ pub fn binary_search(arr: &mut Vec<i32>, search: i32) -> bool {
 }
 
 
-fn search_number(arr: &mut Vec<i32>, search: i32) -> bool {
-    arr.sort();
-    arr.contains(&search)
-}
-
-
 fn simple_binary_search(arr: &mut Vec<i32>, search: i32) {
     let value = arr.binary_search_by(|v| {
         v.partial_cmp(&search).expect("compare error")
@@ -68,4 +62,9 @@ fn simple_binary_search(arr: &mut Vec<i32>, search: i32) {
         Ok(x) => println!("found {}", x),
         Err(x) => println!("Not found {}", x),
     }
+}
+
+fn search_number(arr: &mut Vec<i32>, search: i32) -> bool {
+    arr.sort();
+    arr.contains(&search)
 }

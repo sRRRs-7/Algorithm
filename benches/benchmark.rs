@@ -30,7 +30,7 @@ fn bm4(c: &mut Criterion) {
 fn bm5(c: &mut Criterion) {
     c.bench_function(
         "n_root", |b| b.iter(
-            || algorithm::n_root::n_root(65536.0)));
+            || algorithm::n_sqrt::n_root(65536.0)));
 }
 
 fn bm6(c: &mut Criterion) {
@@ -165,6 +165,12 @@ fn bm27(c: &mut Criterion) {
             || algorithm::newton_method::newton_method(3.0, 10.0)));
 }
 
+fn bm28(c: &mut Criterion) {
+    c.bench_function(
+        "convert_letter_to_number", |b| b.iter(
+            || algorithm::rsa_cipher::convert_letter_to_number(String::from("my name is srrrs"))));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -194,5 +200,6 @@ criterion_group!(benches,
     bm25,
     bm26,
     bm27,
+    bm28,
 );
 criterion_main!(benches);

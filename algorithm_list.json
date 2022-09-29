@@ -1,0 +1,45 @@
+{
+    "algorithm": [{
+            "statistics": ["lcm", "gcd", "median", "n_root"]
+        },
+        {
+            "data structure": ["binary_search", "LinkedList", "hanoi"]
+        },
+        {
+            "sort": ["bubble_sort", "quick_sort", "merge_sort"]
+        },
+        {
+            "diagram": ["pascal_triangle", "dijkstra", "newton_method"]
+        },
+        {
+            "cipher": ["rsa_cipher"]
+        },
+        {
+            "probability": [
+                "get_permutation",
+                "poisson_dispersion",
+                "binominal_dispersion"
+            ]
+        },
+        {
+            "principle": [
+                "collatz_problem", // 3n + 1
+                "fibonacci", // 1+1=2+1=3
+                "gaussian_calc" // 1+99=100, 2+98=100
+                "euler_totient",
+                "prime_judge"
+            ]
+        },
+        {
+            "utility": [
+                "coin_change",
+                "elevation_map",
+                "radix_convert",
+                "reverse_integer",
+                "roman_to_int",
+                "two_sum_search",
+                "wildcard_matching"
+            ]
+        }
+    ]
+}

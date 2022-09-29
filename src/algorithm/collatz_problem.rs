@@ -1,4 +1,6 @@
 
+// 3n + 1 problem
+
 pub fn main() {
     let mut start = 27;
     let result = collatz_problem(&mut start);

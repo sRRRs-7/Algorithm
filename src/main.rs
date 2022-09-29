@@ -2,13 +2,12 @@ mod algorithm;
 
 fn main() {
     // QR code
-    algorithm::qr_code::main();
-
+    // algorithm::qr_code::main();
     algorithm::roma_numeric::main();
     algorithm::prime_number::main();
     algorithm::reverse_int::main();
     algorithm::lcm_gcd::main();
-    algorithm::n_root::main();
+    algorithm::n_sqrt::main();
     algorithm::wildcard_match::main();
     algorithm::median_array::main();
     algorithm::elevation_map::main();
@@ -28,7 +27,8 @@ fn main() {
     algorithm::hanoi::main();
     algorithm::recursive::main();
     algorithm::dijkstra::main();
-    algorithm::rsa_cipher::main();
     algorithm::linked_list::main();
     algorithm::newton_method::main();
+    algorithm::euler_totient::main();
+    algorithm::rsa_cipher::main();
 }
