@@ -31,4 +31,5 @@ fn main() {
     algorithm::newton_method::main();
     algorithm::euler_totient::main();
     algorithm::rsa_cipher::main();
+    algorithm::islands_count::main();
 }

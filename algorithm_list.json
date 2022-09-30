@@ -21,6 +21,7 @@
                 "binominal_dispersion"
             ]
         },
+        { "compress": ["huffman cording"] },
         {
             "principle": [
                 { "collatz_problem": "3n + 1" },
@@ -43,7 +44,8 @@
                 "roman_to_int",
                 "two_sum_search",
                 "wildcard_matching",
-                "qr_code"
+                "qr_code",
+                "islands_count"
             ]
         }
     ]

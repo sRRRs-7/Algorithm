@@ -27,3 +27,5 @@ pub mod rsa_cipher;
 pub mod linked_list;
 pub mod newton_method;
 pub mod euler_totient;
+pub mod huffman_cording;
+pub mod islands_count;

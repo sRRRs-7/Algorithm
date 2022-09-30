@@ -13,15 +13,10 @@ pub fn main() {
 pub fn gcd(a: &i32, b: &i32) -> i32 {
     let mut m = a % b;
 
-    if m == 0 {
-        return *b
-    } else if *a != 0 || *b != 0 {
-        m = gcd(b, &(*a % *b));
-    } else if *a == 0 {
-        return *b
-    } else if *b == 0 {
-        return *a
-    };
+    if m == 0 { return *b }
+    else if *a != 0 || *b != 0 { m = gcd(b, &(*a % *b)) }
+    else if *a == 0 { return *b }
+    else if *b == 0 { return *a };
 
     m
  }
