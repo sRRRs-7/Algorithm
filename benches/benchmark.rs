@@ -162,13 +162,19 @@ fn bm26(c: &mut Criterion) {
 fn bm27(c: &mut Criterion) {
     c.bench_function(
         "newton_method", |b| b.iter(
-            || algorithm::newton_method::newton_method(3.0, 10.0)));
+            || algorithm::newton_method::newton_method(3.0, &mut 10.0)));
 }
 
 fn bm28(c: &mut Criterion) {
     c.bench_function(
         "convert_letter_to_number", |b| b.iter(
             || algorithm::rsa_cipher::convert_letter_to_number(String::from("my name is srrrs"))));
+}
+
+fn bm29(c: &mut Criterion) {
+    c.bench_function(
+        "scramble_string", |b| b.iter(
+            || algorithm::scramble_string::scramble_string("abcde", "abedc")));
 }
 
 
@@ -201,5 +207,6 @@ criterion_group!(benches,
     bm26,
     bm27,
     bm28,
+    bm29,
 );
 criterion_main!(benches);

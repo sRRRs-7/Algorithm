@@ -29,3 +29,7 @@ pub mod newton_method;
 pub mod euler_totient;
 pub mod huffman_cording;
 pub mod islands_count;
+pub mod wait_queue;
+pub mod generic_algorithm;
+pub mod scramble_string;
+pub mod decode_ways;

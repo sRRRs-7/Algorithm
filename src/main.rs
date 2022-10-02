@@ -32,4 +32,8 @@ fn main() {
     algorithm::euler_totient::main();
     algorithm::rsa_cipher::main();
     algorithm::islands_count::main();
+    algorithm::wait_queue::main();
+    algorithm::generic_algorithm::main();
+    algorithm::scramble_string::main();
+    algorithm::decode_ways::main();
 }

@@ -32,7 +32,8 @@
                     "gaussian_calc": "1 + 99 = 100, 2 + 98 = 100"
                 },
                 "euler_totient",
-                "prime_judge"
+                "prime_judge",
+                "wait_queue"
             ]
         },
         {
@@ -45,7 +46,8 @@
                 "two_sum_search",
                 "wildcard_matching",
                 "qr_code",
-                "islands_count"
+                "islands_count",
+                "scramble_string"
             ]
         }
     ]

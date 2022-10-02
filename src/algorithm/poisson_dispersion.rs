@@ -8,28 +8,27 @@
 
 //poisson dispersion
     // n = average frequency
-    // p = average probability
+    // p = probability
     // k = future probability
 
 
 const E: f64 = 2.7182818284590452353602874713527;
 
 pub fn main() {
-    let res = binominal_dispersion(10.0, 0.5, 10.0);
-    println!("binominal: {} %", res);
+    let res = binominal_dispersion(1.0, 0.05, 1.0);
+    println!("binominal: {} %", res * 100.0);
 
-    // if tell average 2 time per half hour, will tell 6 time per a hour ?
-    let res2 = poisson_dispersion(2.0, 2.0, 6.0);
-    println!("poisson dispersion: {} %", res2);
-
+    // if tell average 2 time in half hour, will tell 6 time in a hour ?
+    let res2 = poisson_dispersion(2.5, 1.0, 5.0);
+    println!("poisson dispersion: {} %", res2 * 100.0);
 }
 
 pub fn poisson_dispersion(n: f64, p: f64, k: f64) -> f64 {
-    let lambda = n * p;
+    let lambda = n * p;     // occur thing at interval
     let fac = factorial(k);
     let res = (lambda.powf(k) * E.powf(-lambda)) / fac;
 
-    res * 100.0
+    res
 }
 
 
