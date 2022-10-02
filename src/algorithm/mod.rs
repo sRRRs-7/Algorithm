@@ -34,3 +34,6 @@ pub mod generic_algorithm;
 pub mod scramble_string;
 pub mod decode_ways;
 pub mod zigzag;
+pub mod dice;
+pub mod euclidean_algorithm;
+pub mod monte_carlo;

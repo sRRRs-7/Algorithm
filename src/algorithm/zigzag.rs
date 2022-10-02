@@ -3,7 +3,7 @@ pub fn main() {
     let (s, rows) = ("helloworld", 3);
 
     let s = zigzag(s, rows);
-    println!("{}", s);
+    println!("zigzag: {}", s);
 }
 
 pub fn zigzag(s: &str, rows: i32) -> String {
@@ -17,7 +17,6 @@ pub fn zigzag(s: &str, rows: i32) -> String {
         strings[i].push(c);
         i = if down { i + 1 } else { i - 1 };
         down = down == ( 0 < i && i < rows as usize - 1 );
-        println!("{:?}", strings);
     };
 
     strings.concat()

@@ -37,4 +37,7 @@ fn main() {
     algorithm::scramble_string::main();
     algorithm::decode_ways::main();
     algorithm::zigzag::main();
+    algorithm::dice::main();
+    algorithm::euclidean_algorithm::main();
+    algorithm::monte_carlo::main();
 }
