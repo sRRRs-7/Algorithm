@@ -33,3 +33,4 @@ pub mod wait_queue;
 pub mod generic_algorithm;
 pub mod scramble_string;
 pub mod decode_ways;
+pub mod zigzag;

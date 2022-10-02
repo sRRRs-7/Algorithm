@@ -47,7 +47,9 @@
                 "wildcard_matching",
                 "qr_code",
                 "islands_count",
-                "scramble_string"
+                "scramble_string",
+                "decode_way",
+                "zigzag"
             ]
         }
     ]

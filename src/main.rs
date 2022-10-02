@@ -36,4 +36,5 @@ fn main() {
     algorithm::generic_algorithm::main();
     algorithm::scramble_string::main();
     algorithm::decode_ways::main();
+    algorithm::zigzag::main();
 }
