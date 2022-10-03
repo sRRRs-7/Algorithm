@@ -31,9 +31,13 @@
                 {
                     "gaussian_calc": "1 + 99 = 100, 2 + 98 = 100"
                 },
+                {
+                    "sieve_of_eratosthenes": "prime list"
+                },
                 "euler_totient",
                 "prime_judge",
-                "wait_queue"
+                "wait_queue",
+                "generic_algorithm"
             ]
         },
         {
@@ -49,7 +53,9 @@
                 "islands_count",
                 "scramble_string",
                 "decode_way",
-                "zigzag"
+                "zigzag",
+                "rock_scissors_paper",
+                "dice"
             ]
         }
     ]

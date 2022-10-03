@@ -68,3 +68,19 @@ fn search_number(arr: &mut Vec<i32>, search: i32) -> bool {
     arr.sort();
     arr.contains(&search)
 }
+
+
+// input search value
+// sch = -1 (substitute index)
+// left = 0
+// right = len() - 1
+// center = (left + right) / 2
+// if arr[center] : input
+//    center < input -> left = center + 1
+//    center > input -> right = center - 1
+//    center == input -> break
+
+// left <= right == input
+
+// note
+//    if not find input -> left <-> right (infinite loop)

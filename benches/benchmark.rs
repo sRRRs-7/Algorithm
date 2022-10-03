@@ -177,6 +177,12 @@ fn bm29(c: &mut Criterion) {
             || algorithm::scramble_string::scramble_string("abcde", "abedc")));
 }
 
+fn bm30(c: &mut Criterion) {
+    c.bench_function(
+        "prime_list", |b| b.iter(
+            || algorithm::prime_number::sieve_of_eratosthenes(1000)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -208,5 +214,6 @@ criterion_group!(benches,
     bm27,
     bm28,
     bm29,
+    bm30,
 );
 criterion_main!(benches);
