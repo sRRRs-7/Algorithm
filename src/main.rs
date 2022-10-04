@@ -41,4 +41,5 @@ fn main() {
     algorithm::dice::main();
     algorithm::euclidean_algorithm::main();
     algorithm::monte_carlo::main();
+    algorithm::container_with_most_water::main();
 }

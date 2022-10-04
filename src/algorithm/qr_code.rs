@@ -40,4 +40,6 @@ pub fn qr_code() {
         let image = qr.render::<Luma<u8>>().build();
         image.save("./QRcode.png").unwrap();
 
+        println!("{:?}", generate.output);
+
 }
