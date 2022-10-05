@@ -42,4 +42,5 @@ fn main() {
     algorithm::euclidean_algorithm::main();
     algorithm::monte_carlo::main();
     algorithm::container_with_most_water::main();
+    algorithm::add_one_row_tree::main();
 }

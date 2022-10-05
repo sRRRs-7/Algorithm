@@ -183,6 +183,18 @@ fn bm30(c: &mut Criterion) {
             || algorithm::prime_number::sieve_of_eratosthenes(1000)));
 }
 
+fn bm31(c: &mut Criterion) {
+    c.bench_function(
+        "container_with_most_water", |b| b.iter(
+            || algorithm::container_with_most_water::container_with_most_water(vec![1,8,6,2,5,4,8,3,7])));
+}
+
+fn bm32(c: &mut Criterion) {
+    c.bench_function(
+        "container_with_most_water", |b| b.iter(
+            || algorithm::add_one_row_tree::add_one_row_tree(vec![1,8,6,2,5,4,8,3,7], 1, 3)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -215,5 +227,6 @@ criterion_group!(benches,
     bm28,
     bm29,
     bm30,
+    bm31,
 );
 criterion_main!(benches);
