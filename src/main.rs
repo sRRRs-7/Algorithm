@@ -3,7 +3,7 @@ mod algorithm;
 fn main() {
     // QR code
     // algorithm::qr_code::main();
-    algorithm::rock_scissors_paper::main();
+    // algorithm::rock_scissors_paper::main();
     algorithm::roma_numeric::main();
     algorithm::prime_number::main();
     algorithm::reverse_int::main();
@@ -43,4 +43,5 @@ fn main() {
     algorithm::monte_carlo::main();
     algorithm::container_with_most_water::main();
     algorithm::add_one_row_tree::main();
+    algorithm::n_queen::main();
 }

@@ -40,3 +40,4 @@ pub mod monte_carlo;
 pub mod rock_scissors_paper;
 pub mod container_with_most_water;
 pub mod add_one_row_tree;
+pub mod n_queen;

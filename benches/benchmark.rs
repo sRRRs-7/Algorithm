@@ -191,7 +191,7 @@ fn bm31(c: &mut Criterion) {
 
 fn bm32(c: &mut Criterion) {
     c.bench_function(
-        "container_with_most_water", |b| b.iter(
+        "add_one_row_tree", |b| b.iter(
             || algorithm::add_one_row_tree::add_one_row_tree(vec![1,8,6,2,5,4,8,3,7], 1, 3)));
 }
 
@@ -228,5 +228,6 @@ criterion_group!(benches,
     bm29,
     bm30,
     bm31,
+    bm32,
 );
 criterion_main!(benches);
