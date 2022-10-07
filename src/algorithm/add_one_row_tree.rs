@@ -19,7 +19,7 @@ pub fn main() {
         if res.len() -1 == i { println!() }
     };
 
-    println!("add bread first tree: {:?}", res);
+    println!("add breadth first tree: {:?}", res);
 }
 
 pub fn add_one_row_tree(root: Vec<i32>, value: i32, depth: i32) -> Vec<i32> {

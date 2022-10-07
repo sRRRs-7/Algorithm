@@ -44,4 +44,5 @@ fn main() {
     algorithm::container_with_most_water::main();
     algorithm::add_one_row_tree::main();
     algorithm::n_queen::main();
+    algorithm::my_calender::main();
 }
