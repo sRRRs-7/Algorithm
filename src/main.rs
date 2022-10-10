@@ -45,4 +45,5 @@ fn main() {
     algorithm::add_one_row_tree::main();
     algorithm::n_queen::main();
     algorithm::my_calender::main();
+    algorithm::text_justification::main();
 }

@@ -14,7 +14,7 @@ pub fn main() {
         result.push(res);
     };
 
-    println!("calender: {:?}", result);
+    // println!("calender: {:?}", result);
 }
 
 
@@ -32,8 +32,6 @@ impl MyCalendarThree {
         // hashmap entry or insert
         *self.btree.entry(start).or_insert(0) += 1;
         *self.btree.entry(end).or_insert(0) -= 1;
-
-        println!("{:?}", self.btree);
 
         let mut active = 0;
         let mut m = 0;

@@ -195,6 +195,24 @@ fn bm32(c: &mut Criterion) {
             || algorithm::add_one_row_tree::add_one_row_tree(vec![1,8,6,2,5,4,8,3,7], 1, 3)));
 }
 
+fn bm33(c: &mut Criterion) {
+    c.bench_function(
+        "my_calender", |b| b.iter(
+            || algorithm::my_calender::main()));
+}
+
+fn bm34(c: &mut Criterion) {
+    c.bench_function(
+        "n_queens", |b| b.iter(
+            || algorithm::n_queen::solve_n_queens(4)));
+}
+
+fn bm35(c: &mut Criterion) {
+    c.bench_function(
+        "text_justification", |b| b.iter(
+            || algorithm::text_justification::text_justification(vec!["This", "is", "an", "example", "of", "text", "justification."].iter().map(|&x| x.to_string()).collect(), 16)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -229,5 +247,8 @@ criterion_group!(benches,
     bm30,
     bm31,
     bm32,
+    bm33,
+    bm34,
+    bm35,
 );
 criterion_main!(benches);

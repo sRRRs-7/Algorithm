@@ -32,4 +32,5 @@ pub fn dice_sum(n: i32, k: i32, target: i32) -> i32 {
     };
 
     dp_prev[target] as _
+
 }
