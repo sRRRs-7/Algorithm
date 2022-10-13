@@ -46,4 +46,7 @@ fn main() {
     algorithm::n_queen::main();
     algorithm::my_calender::main();
     algorithm::text_justification::main();
+    algorithm::edit_distance::main();
+    algorithm::valid_number::main();
+    algorithm::basic_calculator::main();
 }

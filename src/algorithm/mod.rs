@@ -43,3 +43,6 @@ pub mod add_one_row_tree;
 pub mod n_queen;
 pub mod my_calender;
 pub mod text_justification;
+pub mod edit_distance;
+pub mod valid_number;
+pub mod basic_calculator;

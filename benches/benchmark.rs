@@ -213,6 +213,12 @@ fn bm35(c: &mut Criterion) {
             || algorithm::text_justification::text_justification(vec!["This", "is", "an", "example", "of", "text", "justification."].iter().map(|&x| x.to_string()).collect(), 16)));
 }
 
+fn bm36(c: &mut Criterion) {
+    c.bench_function(
+        "valid_number", |b| b.iter(
+            || algorithm::valid_number::valid_number(String::from("-123.456e789"))));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -250,5 +256,6 @@ criterion_group!(benches,
     bm33,
     bm34,
     bm35,
+    bm36,
 );
 criterion_main!(benches);

@@ -31,8 +31,6 @@ pub fn text_justification(words: Vec<String>, max_width: i32) -> Vec<String> {
     }
     sentences.push(st);
 
-    println!("{:?}", sentences);
-
     let mut res = Vec::new();
 
     for w in &mut sentences {
