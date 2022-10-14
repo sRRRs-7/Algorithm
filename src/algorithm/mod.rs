@@ -46,3 +46,4 @@ pub mod text_justification;
 pub mod edit_distance;
 pub mod valid_number;
 pub mod basic_calculator;
+pub mod candy_rating;

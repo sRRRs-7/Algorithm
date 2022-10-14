@@ -1,0 +1,251 @@
+running 0 tests
+
+test result: ok.0 passed;
+0 failed;
+0 ignored;
+0 measured;
+0 filtered out;
+finished in 0.00 s
+
+
+running 0 tests
+
+test result: ok.0 passed;
+0 failed;
+0 ignored;
+0 measured;
+0 filtered out;
+finished in 0.00 s
+
+roma_numeric time: [521.82 ns 529.54 ns 537.25 ns]
+change: [-12.427 % -10.191 % -8.1199 % ](p = 0.00 < 0.05)
+Performance has improved.
+
+prime judge time: [48.444 ns 48.533 ns 48.623 ns]
+change: [-0.1572 % +0.2276 % +0.5408 % ](p = 0.22 > 0.05)
+No change in performance detected.
+Found 3 outliers among 100 measurements(3.00 % )
+2(2.00 % ) high mild
+1(1.00 % ) high severe
+
+greater common divide time: [8.5819 ns 8.6029 ns 8.6311 ns]
+change: [-7.7143 % -7.5739 % -7.4116 % ](p = 0.00 < 0.05)
+Performance has improved.
+Found 8 outliers among 100 measurements(8.00 % )
+5(5.00 % ) high mild
+3(3.00 % ) high severe
+
+least common multiple time: [11.746 ns 12.572 ns 13.433 ns]
+change: [-11.491 % -5.0001 % +1.8455 % ](p = 0.15 > 0.05)
+No change in performance detected.
+
+n_root time: [275.67 ns 289.06 ns 305.23 ns]
+change: [+16.277 % +21.197 % +26.639 % ](p = 0.00 < 0.05)
+Performance has regressed.
+Found 3 outliers among 100 measurements(3.00 % )
+2(2.00 % ) high mild
+1(1.00 % ) high severe
+
+reverse_integer time: [12.551 ns 12.559 ns 12.569 ns]
+change: [-0.0238 % +0.0708 % +0.1686 % ](p = 0.15 > 0.05)
+No change in performance detected.
+Found 5 outliers among 100 measurements(5.00 % )
+1(1.00 % ) low severe
+1(1.00 % ) low mild
+2(2.00 % ) high mild
+1(1.00 % ) high severe
+
+reverse_integer #2      time:   [15.538 ns 15.586 ns 15.642 ns]
+                        change: [+0.1898% +0.4777% +0.8050%] (p = 0.00 < 0.05)
+Change within noise threshold.
+Found 8 outliers among 100 measurements(8.00 % )
+3(3.00 % ) high mild
+5(5.00 % ) high severe
+
+wildcard_match time: [356.87 ns 366.76 ns 377.76 ns]
+change: [+30.163 % +36.905 % +43.749 % ](p = 0.00 < 0.05)
+Performance has regressed.
+Found 1 outliers among 100 measurements(1.00 % )
+1(1.00 % ) high severe
+
+is_match time: [75.958 ns 76.343 ns 76.857 ns]
+change: [+3.9652 % +5.2016 % +6.4721 % ](p = 0.00 < 0.05)
+Performance has regressed.
+
+median_array time: [212.10 ns 223.58 ns 239.48 ns]
+change: [-5.0818 % -2.0906 % +1.5893 % ](p = 0.25 > 0.05)
+No change in performance detected.
+Found 6 outliers among 100 measurements(6.00 % )
+4(4.00 % ) high mild
+2(2.00 % ) high severe
+
+median time: [355.77 ns 359.55 ns 363.89 ns]
+change: [+10.682 % +12.395 % +13.979 % ](p = 0.00 < 0.05)
+Performance has regressed.
+
+elevation_map time: [65.397 ns 66.130 ns 66.955 ns]
+change: [+1.6552 % +2.8998 % +4.1706 % ](p = 0.00 < 0.05)
+Performance has regressed.
+Found 20 outliers among 100 measurements(20.00 % )
+20(20.00 % ) high severe
+
+trap time: [296.87 ns 302.16 ns 307.69 ns]
+change: [+3.2081 % +5.0984 % +6.9458 % ](p = 0.00 < 0.05)
+Performance has regressed.
+
+bubble_sort time: [228.28 ns 229.86 ns 231.33 ns]
+change: [+5.6073 % +6.4631 % +7.2655 % ](p = 0.00 < 0.05)
+Performance has regressed.
+Found 1 outliers among 100 measurements(1.00 % )
+1(1.00 % ) high mild
+
+rust_simple_sort time: [156.87 ns 158.90 ns 161.03 ns]
+change: [+1.8995 % +3.0322 % +4.3209 % ](p = 0.00 < 0.05)
+Performance has regressed.
+Found 3 outliers among 100 measurements(3.00 % )
+3(3.00 % ) high mild
+
+quick_sort time: [122.65 ns 123.66 ns 124.90 ns]
+change: [+0.8194 % +1.3843 % +2.0711 % ](p = 0.00 < 0.05)
+Change within noise threshold.
+Found 18 outliers among 100 measurements(18.00 % )
+2(2.00 % ) high mild
+16(16.00 % ) high severe
+
+merge_sort time: [121.87 ns 122.03 ns 122.23 ns]
+change: [-1.8512 % -1.0971 % -0.4380 % ](p = 0.00 < 0.05)
+Change within noise threshold.
+Found 4 outliers among 100 measurements(4.00 % )
+1(1.00 % ) high mild
+3(3.00 % ) high severe
+
+radix_convert time: [435.25 ns 448.01 ns 465.07 ns]
+change: [+2.2542 % +4.9085 % +8.1922 % ](p = 0.00 < 0.05)
+Performance has regressed.
+Found 3 outliers among 100 measurements(3.00 % )
+3(3.00 % ) high severe
+
+fibonacci time: [111.55 ns 111.57 ns 111.60 ns]
+change: [-7.0878 % -3.7593 % -1.1817 % ](p = 0.00 < 0.05)
+Performance has improved.
+Found 9 outliers among 100 measurements(9.00 % )
+4(4.00 % ) high mild
+5(5.00 % ) high severe
+
+binary_search time: [2.3591 µs 2.4051 µs 2.4509 µs]
+change: [-17.657 % -13.537 % -9.8640 % ](p = 0.00 < 0.05)
+Performance has improved.
+
+gaussian_calc time: [1.5347 ns 1.5362 ns 1.5393 ns]
+change: [-10.587 % -6.6430 % -3.0857 % ](p = 0.00 < 0.05)
+Performance has improved.
+Found 10 outliers among 100 measurements(10.00 % )
+5(5.00 % ) high mild
+5(5.00 % ) high severe
+
+collatz_problem time: [628.60 ns 640.15 ns 652.74 ns]
+change: [-38.593 % -34.493 % -30.463 % ](p = 0.00 < 0.05)
+Performance has improved.
+
+pascal_triangle time: [1.5346 ns 1.5348 ns 1.5350 ns]
+change: [-1.2134 % -0.5512 % -0.0382 % ](p = 0.06 > 0.05)
+No change in performance detected.
+Found 12 outliers among 100 measurements(12.00 % )
+5(5.00 % ) high mild
+7(7.00 % ) high severe
+
+coin_change time: [54.102 ns 54.803 ns 55.565 ns]
+change: [-22.524 % -15.875 % -9.4745 % ](p = 0.00 < 0.05)
+Performance has improved.
+
+poisson_dispersion time: [29.874 ns 29.878 ns 29.884 ns]
+change: [-23.258 % -17.335 % -11.252 % ](p = 0.00 < 0.05)
+Performance has improved.
+Found 12 outliers among 100 measurements(12.00 % )
+6(6.00 % ) high mild
+6(6.00 % ) high severe
+
+hanoi time: [105.39 ns 105.44 ns 105.52 ns]
+change: [-0.7036 % -0.3991 % -0.1836 % ](p = 0.00 < 0.05)
+Change within noise threshold.
+Found 10 outliers among 100 measurements(10.00 % )
+1(1.00 % ) low severe
+3(3.00 % ) high mild
+6(6.00 % ) high severe
+
+newton_method time: [123.07 ns 123.15 ns 123.28 ns]
+change: [-0.3791 % +0.1830 % +1.0044 % ](p = 0.77 > 0.05)
+No change in performance detected.
+Found 14 outliers among 100 measurements(14.00 % )
+6(6.00 % ) high mild
+8(8.00 % ) high severe
+
+convert_letter_to_number
+time: [1.9499 µs 1.9717 µs 1.9953 µs]
+change: [-25.969 % -20.921 % -15.870 % ](p = 0.00 < 0.05)
+Performance has improved.
+Found 1 outliers among 100 measurements(1.00 % )
+1(1.00 % ) high mild
+
+scramble_string time: [1.0428 µs 1.0473 µs 1.0516 µs]
+change: [-30.138 % -24.505 % -18.587 % ](p = 0.00 < 0.05)
+Performance has improved.
+Found 15 outliers among 100 measurements(15.00 % )
+10(10.00 % ) low mild
+2(2.00 % ) high mild
+3(3.00 % ) high severe
+
+prime_list time: [4.8127 µs 4.8275 µs 4.8415 µs]
+change: [-26.491 % -17.852 % -9.6312 % ](p = 0.00 < 0.05)
+Performance has improved.
+
+container_with_most_water
+time: [49.197 ns 49.645 ns 50.129 ns]
+change: [-4.3684 % -0.2534 % +3.1447 % ](p = 0.91 > 0.05)
+No change in performance detected.
+Found 1 outliers among 100 measurements(1.00 % )
+1(1.00 % ) high mild
+
+add_one_row_tree time: [168.54 ns 172.82 ns 177.72 ns]
+change: [-6.8325 % -4.9836 % -3.0616 % ](p = 0.00 < 0.05)
+Performance has improved.
+Found 21 outliers among 100 measurements(21.00 % )
+4(4.00 % ) high mild
+17(17.00 % ) high severe
+
+my_calender time: [527.56 ns 532.84 ns 538.68 ns]
+change: [+0.2290 % +1.5918 % +3.1036 % ](p = 0.03 < 0.05)
+Change within noise threshold.
+Found 34 outliers among 100 measurements(34.00 % )
+11(11.00 % ) low severe
+6(6.00 % ) low mild
+3(3.00 % ) high mild
+14(14.00 % ) high severe
+
+n_queens time: [1.7890 µs 1.8103 µs 1.8328 µs]
+change: [-12.956 % -8.8302 % -5.3894 % ](p = 0.00 < 0.05)
+Performance has improved.
+Found 4 outliers among 100 measurements(4.00 % )
+4(4.00 % ) high mild
+
+text_justification time: [4.0155 µs 4.0366 µs 4.0587 µs]
+change: [-14.004 % -10.037 % -6.4232 % ](p = 0.00 < 0.05)
+Performance has improved.
+Found 6 outliers among 100 measurements(6.00 % )
+4(4.00 % ) high mild
+2(2.00 % ) high severe
+
+valid_number time: [315.24 ns 325.46 ns 335.80 ns]
+change: [+1.7290 % +5.5444 % +9.3900 % ](p = 0.00 < 0.05)
+Performance has regressed.
+Found 17 outliers among 100 measurements(17.00 % )
+15(15.00 % ) low mild
+2(2.00 % ) high mild
+
+basic_calculator time: [138.77 ns 140.59 ns 142.66 ns]
+change: [-3.2308 % +1.4131 % +5.3051 % ](p = 0.56 > 0.05)
+No change in performance detected.
+Found 1 outliers among 100 measurements(1.00 % )
+1(1.00 % ) high mild
+
+candy_rating time: [162.72 ns 164.72 ns 166.71 ns]

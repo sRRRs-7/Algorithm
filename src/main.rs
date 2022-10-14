@@ -49,4 +49,5 @@ fn main() {
     algorithm::edit_distance::main();
     algorithm::valid_number::main();
     algorithm::basic_calculator::main();
+    algorithm::candy_rating::main();
 }

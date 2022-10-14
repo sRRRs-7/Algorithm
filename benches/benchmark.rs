@@ -219,6 +219,18 @@ fn bm36(c: &mut Criterion) {
             || algorithm::valid_number::valid_number(String::from("-123.456e789"))));
 }
 
+fn bm37(c: &mut Criterion) {
+    c.bench_function(
+        "basic_calculator", |b| b.iter(
+            || algorithm::basic_calculator::basic_calculator(String::from("-1+(-1-2)-2"))));
+}
+
+fn bm38(c: &mut Criterion) {
+    c.bench_function(
+        "candy_rating", |b| b.iter(
+            || algorithm::candy_rating::candy_rating(vec![1,8,6,2,5,4,8,3,7])));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -257,5 +269,7 @@ criterion_group!(benches,
     bm34,
     bm35,
     bm36,
+    bm37,
+    bm38,
 );
 criterion_main!(benches);
