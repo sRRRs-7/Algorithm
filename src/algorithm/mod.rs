@@ -47,3 +47,6 @@ pub mod edit_distance;
 pub mod valid_number;
 pub mod basic_calculator;
 pub mod candy_rating;
+pub mod burst_balloon;
+pub mod least_frequency_used;
+pub mod smallest_good_base;

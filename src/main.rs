@@ -50,4 +50,7 @@ fn main() {
     algorithm::valid_number::main();
     algorithm::basic_calculator::main();
     algorithm::candy_rating::main();
+    algorithm::burst_balloon::main();
+    algorithm::least_frequency_used::main();
+    algorithm::smallest_good_base::main();
 }

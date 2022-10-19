@@ -231,6 +231,27 @@ fn bm38(c: &mut Criterion) {
             || algorithm::candy_rating::candy_rating(vec![1,8,6,2,5,4,8,3,7])));
 }
 
+fn bm39(c: &mut Criterion) {
+    c.bench_function(
+        "burst_balloons", |b| b.iter(
+            || algorithm::burst_balloon::burst_balloon(vec![1,2,3,4,5,6,7,8,9])));
+}
+
+fn bm40(c: &mut Criterion) {
+    c.bench_function(
+        "LFU_cache", |b| b.iter(
+            || algorithm::least_frequency_used::least_frequency_used(
+                vec!["LFUCache", "put", "put", "get", "put", "get", "get", "put", "get", "get", "get"],
+                vec![vec![2], vec![1, 1], vec![2, 2], vec![1], vec![3, 3], vec![2], vec![3], vec![4, 4], vec![1], vec![3], vec![4]],
+            )));
+}
+
+fn bm41(c: &mut Criterion) {
+    c.bench_function(
+        "smallest_good_base", |b| b.iter(
+            || algorithm::smallest_good_base::smallest_good_base("56329856498")));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -271,5 +292,8 @@ criterion_group!(benches,
     bm36,
     bm37,
     bm38,
+    bm39,
+    bm40,
+    bm41,
 );
 criterion_main!(benches);
