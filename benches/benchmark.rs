@@ -1,4 +1,5 @@
 extern crate criterion;
+
 use criterion::{criterion_group, criterion_main, Criterion};
 
 use lib::algorithm;
@@ -252,6 +253,12 @@ fn bm41(c: &mut Criterion) {
             || algorithm::smallest_good_base::smallest_good_base("56329856498")));
 }
 
+fn bm42(c: &mut Criterion) {
+    c.bench_function(
+        "freedom trail", |b| b.iter(
+            || algorithm::freedom_trail::freedom_trail(String::from("godding"), String::from("godding"))));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -295,5 +302,6 @@ criterion_group!(benches,
     bm39,
     bm40,
     bm41,
+    bm42,
 );
 criterion_main!(benches);

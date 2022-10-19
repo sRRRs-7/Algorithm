@@ -50,3 +50,4 @@ pub mod candy_rating;
 pub mod burst_balloon;
 pub mod least_frequency_used;
 pub mod smallest_good_base;
+pub mod freedom_trail;
