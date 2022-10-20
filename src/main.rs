@@ -54,4 +54,5 @@ fn main() {
     algorithm::least_frequency_used::main();
     algorithm::smallest_good_base::main();
     algorithm::freedom_trail::main();
+    algorithm::max_chunks_to_make_sorted::main();
 }

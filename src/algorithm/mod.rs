@@ -51,3 +51,4 @@ pub mod burst_balloon;
 pub mod least_frequency_used;
 pub mod smallest_good_base;
 pub mod freedom_trail;
+pub mod max_chunks_to_make_sorted;
