@@ -259,6 +259,21 @@ fn bm42(c: &mut Criterion) {
             || algorithm::freedom_trail::freedom_trail(String::from("godding"), String::from("godding"))));
 }
 
+fn bm43(c: &mut Criterion) {
+    c.bench_function(
+        "max_chunks_to_make_array", |b| b.iter(
+            || algorithm::max_chunks_to_make_sorted::max_chunks_to_sorted(vec![5,4,3,2,1,3,4,5,6,7,4])));
+}
+
+fn bm44(c: &mut Criterion) {
+    c.bench_function(
+        "number_of_valid_words_for_each_puzzle", |b| b.iter(
+            || algorithm::number_of_valid_words_for_each_puzzle::find_num_of_valid_words(
+                vec!["apple","pleas","please"].iter().map(|&x| x.to_string()).collect(),
+                vec!["aelwxyz","aelpxyz","aelpsxy","saelpxy","xaelpsy"].iter().map(|&x| x.to_string()).collect(),
+            )));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -303,5 +318,7 @@ criterion_group!(benches,
     bm40,
     bm41,
     bm42,
+    bm43,
+    bm44,
 );
 criterion_main!(benches);

@@ -55,4 +55,6 @@ fn main() {
     algorithm::smallest_good_base::main();
     algorithm::freedom_trail::main();
     algorithm::max_chunks_to_make_sorted::main();
+    algorithm::number_of_valid_words_for_each_puzzle::main();
+    algorithm::fancy_sequence::main();
 }

@@ -1,25 +1,23 @@
 
 pub fn main() {
-    let arr = vec![5,4,3,2,1];
+    let arr = vec![5,4,3,2,1,6,7];
 
-    let res = max_chunks_to_make_sorted(arr);
+    let res = max_chunks_to_sorted(arr.clone());
     println!("{}", res);
+
 }
 
-pub fn max_chunks_to_make_sorted(arr: Vec<i32>) -> i32 {
-    let mut array = arr.clone();
-    array.reverse();
 
-    let mut chunk = 0;
-
-    for i in 1..array.len() - 1 {
-        for ii in 1..array.len() - 1 {
-            if array[i-1] > array[ii] {
-                array.swap(i-1, ii);
-                chunk += 1
-            }
+pub fn max_chunks_to_sorted(arr: Vec<i32>) -> i32 {
+    let mut st = Vec::new();
+    let mut cur = -1;
+    for x in arr {
+        while st.last().map_or(false, |&z| x < z) {
+            st.pop();
         }
-    };
+        cur = cur.max(x);
+        st.push(cur);
+    }
 
-    chunk
+    st.len() as _
 }
