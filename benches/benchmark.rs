@@ -274,6 +274,12 @@ fn bm44(c: &mut Criterion) {
             )));
 }
 
+fn bm45(c: &mut Criterion) {
+    c.bench_function(
+        "count_special_integer", |b| b.iter(
+            || algorithm::count_special_integer::count_special_integer(1234)));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -320,5 +326,6 @@ criterion_group!(benches,
     bm42,
     bm43,
     bm44,
+    bm45,
 );
 criterion_main!(benches);

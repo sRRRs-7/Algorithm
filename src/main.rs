@@ -58,4 +58,5 @@ fn main() {
     algorithm::number_of_valid_words_for_each_puzzle::main();
     algorithm::fancy_sequence::main();
     algorithm::largest_palindrome::main();
+    algorithm::count_special_integer::main();
 }
