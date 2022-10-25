@@ -57,4 +57,5 @@ fn main() {
     algorithm::max_chunks_to_make_sorted::main();
     algorithm::number_of_valid_words_for_each_puzzle::main();
     algorithm::fancy_sequence::main();
+    algorithm::largest_palindrome::main();
 }

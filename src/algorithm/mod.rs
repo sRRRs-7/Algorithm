@@ -54,3 +54,4 @@ pub mod freedom_trail;
 pub mod max_chunks_to_make_sorted;
 pub mod number_of_valid_words_for_each_puzzle;
 pub mod fancy_sequence;
+pub mod largest_palindrome;

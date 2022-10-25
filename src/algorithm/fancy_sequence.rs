@@ -13,8 +13,12 @@ struct Fancy {
 }
 
 impl Fancy {
-    fn new() -> Self { Self { output: Vec::new() } }
-    fn append(&mut self, val: i32) { self.output.push(val) }
+    fn new() -> Self {
+        Self { output: Vec::new() }
+    }
+    fn append(&mut self, val: i32) {
+        self.output.push(val)
+    }
     fn add_all(&mut self, inc: i32) {
         for x in self.output.iter_mut() { *x = *x + inc; }
     }
@@ -22,11 +26,7 @@ impl Fancy {
         for x in self.output.iter_mut() { *x = *x * m; }
     }
     fn get_index(&mut self, idx: i32) -> i32 {
-        if let Some(&x) = self.output.get(idx as usize) {
-            x
-        } else {
-            -1
-        }
+        self.output.get(idx as usize).map_or(-1, |&x| x as i32)
     }
 }
 
