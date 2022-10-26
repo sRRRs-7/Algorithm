@@ -1,7 +1,8 @@
 
 pub fn main() {
-    let result = get_permutation(4, 10);
-    println!("result: {}", result);
+    let result = get_permutation(4, 9);
+    println!("sequence_permutation: {}", result);
+
 }
 
 pub fn get_permutation(n: i32, k: i32) -> String {
@@ -31,11 +32,17 @@ fn next_permutation(arr: &mut Vec<i32>) {
                 low += 1;
                 high -= 1;
             }
-            // println!("{:?}", arr);
             return;
         }
     }
-    arr.sort();
+    arr.sort()
 }
 
+
+// 1234
+// 1243
+// 1324
+// 1342
+// 1423
+// 1432
 
