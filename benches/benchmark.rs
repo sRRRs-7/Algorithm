@@ -280,6 +280,12 @@ fn bm45(c: &mut Criterion) {
             || algorithm::count_special_integer::count_special_integer(1234)));
 }
 
+fn bm46(c: &mut Criterion) {
+    c.bench_function(
+        "triplet_array", |b| b.iter(
+            || algorithm::triplet_array::triplet_array(vec![4,0,1,3,2], vec![4,1,0,2,3])));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -327,5 +333,6 @@ criterion_group!(benches,
     bm43,
     bm44,
     bm45,
+    bm46,
 );
 criterion_main!(benches);

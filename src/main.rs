@@ -59,4 +59,5 @@ fn main() {
     algorithm::fancy_sequence::main();
     algorithm::largest_palindrome::main();
     algorithm::count_special_integer::main();
+    algorithm::triplet_array::main();
 }

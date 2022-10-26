@@ -2,7 +2,6 @@
 pub fn main() {
     let result = get_permutation(4, 9);
     println!("sequence_permutation: {}", result);
-
 }
 
 pub fn get_permutation(n: i32, k: i32) -> String {
