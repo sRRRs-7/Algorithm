@@ -286,6 +286,28 @@ fn bm46(c: &mut Criterion) {
             || algorithm::triplet_array::triplet_array(vec![4,0,1,3,2], vec![4,1,0,2,3])));
 }
 
+fn bm47(c: &mut Criterion) {
+    c.bench_function(
+        "match_substring", |b| b.iter(
+            || algorithm::match_substring_after_replace::match_replacement(
+                "Fool33tbaR".to_string(),
+                "leetd".to_string(),
+                vec![['e','3'],['t','7'],['t','8'],['d','b'],['p','b']].iter().map(|&x| x.to_vec()).collect()
+            )));
+}
+
+fn bm48(c: &mut Criterion) {
+    c.bench_function(
+        "group_anagram", |b| b.iter(
+            || algorithm::group_anagram::group_anagram(vec!["eat","tea","tan","ate","nat","bat"])));
+}
+
+fn bm49(c: &mut Criterion) {
+    c.bench_function(
+        "group_anagram2", |b| b.iter(
+            || algorithm::group_anagram::group_anagrams(vec!["eat","tea","tan","ate","nat","bat"])));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -334,5 +356,8 @@ criterion_group!(benches,
     bm44,
     bm45,
     bm46,
+    bm47,
+    bm48,
+    bm49,
 );
 criterion_main!(benches);

@@ -57,3 +57,5 @@ pub mod fancy_sequence;
 pub mod largest_palindrome;
 pub mod count_special_integer;
 pub mod triplet_array;
+pub mod match_substring_after_replace;
+pub mod group_anagram;

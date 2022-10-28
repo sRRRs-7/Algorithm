@@ -60,4 +60,6 @@ fn main() {
     algorithm::largest_palindrome::main();
     algorithm::count_special_integer::main();
     algorithm::triplet_array::main();
+    algorithm::match_substring_after_replace::main();
+    algorithm::group_anagram::main();
 }
