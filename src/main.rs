@@ -62,4 +62,6 @@ fn main() {
     algorithm::triplet_array::main();
     algorithm::match_substring_after_replace::main();
     algorithm::group_anagram::main();
+    algorithm::jump_game::main();
+    algorithm::magic_circle::main();
 }

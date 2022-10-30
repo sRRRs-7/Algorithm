@@ -59,3 +59,5 @@ pub mod count_special_integer;
 pub mod triplet_array;
 pub mod match_substring_after_replace;
 pub mod group_anagram;
+pub mod magic_circle;
+pub mod jump_game;

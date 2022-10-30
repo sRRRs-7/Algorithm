@@ -308,6 +308,12 @@ fn bm49(c: &mut Criterion) {
             || algorithm::group_anagram::group_anagrams(vec!["eat","tea","tan","ate","nat","bat"])));
 }
 
+fn bm50(c: &mut Criterion) {
+    c.bench_function(
+        "jump_game", |b| b.iter(
+            || algorithm::jump_game::jump_game(vec![100,-23,-23,404,100,23,23,23,3,404])));
+}
+
 
 criterion_group!(benches,
     bm1,
@@ -359,5 +365,6 @@ criterion_group!(benches,
     bm47,
     bm48,
     bm49,
+    bm50,
 );
 criterion_main!(benches);
