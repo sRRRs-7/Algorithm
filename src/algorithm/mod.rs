@@ -61,3 +61,4 @@ pub mod match_substring_after_replace;
 pub mod group_anagram;
 pub mod magic_circle;
 pub mod jump_game;
+pub mod cat_and_mouse;

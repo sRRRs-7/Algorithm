@@ -64,4 +64,5 @@ fn main() {
     algorithm::group_anagram::main();
     algorithm::jump_game::main();
     algorithm::magic_circle::main();
+    algorithm::cat_and_mouse::main();
 }
